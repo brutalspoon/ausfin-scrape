@@ -1,6 +1,6 @@
 # Australian Finance Scrapers
 
-This repository provides a number of scrapers which connect to various Australian financial
+This repository is a fork of [cmbrad's ausfin-scrape](https://github.com/cmbrad/ausfin-scrape) and provides a number of scrapers which connect to various Australian financial
 institutions to get the current account balance. Available scrapers are:
 
 * 28 Degrees
