@@ -528,3 +528,20 @@ class UniSuperSource(Source):
         balance_field = self.driver.find_element_by_xpath('//*[@id="main"]/div[2]/div/div/div[3]')
 
         return self._balance_to_num(balance_field.text)
+
+
+class HostPlusSource(Source):
+    def fetch_balance(self, username, password, base_url='https://member.aas.com.au/Login/HC'):
+        self.driver.get(base_url)
+
+        username_field = self.driver.find_element_by_id('UserName')
+        password_field = self.driver.find_element_by_id('Password')
+        login_btn = self.driver.find_element_by_id('btnLogin')
+
+        username_field.send_keys(username)
+        password_field.send_keys(password)
+        login_btn.click()
+
+        balance_field = self.driver.find_element_by_id('prominentCurrentBalance')
+
+        return self._balance_to_num(balance_field.text)

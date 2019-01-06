@@ -14,6 +14,7 @@ institutions to get the current account balance. Available scrapers are:
 * Suncorp Bank (Shares)
 * Ubank
 * Unisuper
+* HostPlus Super
 
 ## Prerequisites
 * Python 3.6
@@ -50,6 +51,7 @@ Source must be one of:
 * suncorpbank-super
 * ubank-bank
 * unisuper-super
+* hostplus-super
 
 ### Net Worth
 

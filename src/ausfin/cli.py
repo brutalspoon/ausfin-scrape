@@ -8,7 +8,7 @@ from tabulate import tabulate
 
 from ausfin.sources import TwentyEightDegreesSource, UbankSource, SuncorpBankSource, IngBankSource, \
     CommbankBankSource, CommbankSharesSource, RatesetterSource, AcornsSource, driver, SuncorpSuperSource, \
-    BtcMarketsSource, UniSuperSource
+    BtcMarketsSource, UniSuperSource, HostPlusSource
 
 
 @click.group()
@@ -28,6 +28,7 @@ sources = {
     'suncorpbank-super': SuncorpSuperSource,
     'ubank-bank': UbankSource,
     'unisuper-super': UniSuperSource,
+    'hostplus-super': HostPlusSource,
 }
 
 
